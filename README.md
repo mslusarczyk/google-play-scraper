@@ -1,3 +1,4 @@
+
 # google-play-scraper [![workflow](https://github.com/facundoolano/google-play-scraper/actions/workflows/tests.yml/badge.svg)](https://github.com/facundoolano/google-play-scraper/actions/workflows/tests.yml)
 Node.js module to scrape application data from the Google Play store.
 
