@@ -30,15 +30,16 @@ function memoized (opts) {
   const doMemoize = (fn) => memoizee(fn, cacheOpts);
   const mAppMethod = memoizee(appMethod, cacheOpts);
 
+  // TODO commented out since they don't work right now
   const otherMethods = {
     list: require('./lib/list'),
-    search: R.partial(require('./lib/search'), [mAppMethod]),
+    // search: R.partial(require('./lib/search'), [mAppMethod]),
     suggest: require('./lib/suggest'),
-    developer: require('./lib/developer'),
+    // developer: require('./lib/developer'),
     reviews: require('./lib/reviews'),
-    similar: require('./lib/similar'),
-    permissions: require('./lib/permissions'),
-    categories: require('./lib/categories')
+    // similar: require('./lib/similar'),
+    permissions: require('./lib/permissions')
+    // categories: require('./lib/categories')
   };
 
   return Object.assign({ app: mAppMethod },
